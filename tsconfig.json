@@ -22,7 +22,8 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "paths": {
-      "@pages/*": ["pages/*"]
+      "@src/*": ["src/*"],
+      "@pages/*": ["src/pages/*"]
     }
   },
   "include": ["src"],
