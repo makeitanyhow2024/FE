@@ -1,18 +1,6 @@
 {
-  "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint", "prettier"],
-  "extends": [
-    "plugin:react/recommended",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended",
-    "react-app",
-  ],
-  "parserOptions": {
-    "ecmaVersion": "latest",
-    "ecmaFeatures": {
-      "jsx": true,
-    },
-  },
+  "extends": ["react-app", "react-app/jest", "plugin:prettier/recommended"],
+  "plugins": ["prettier"],
   "rules": {
     "react/jsx-uses-vars": "error",
     "react/prop-types": 0,

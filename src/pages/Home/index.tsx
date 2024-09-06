@@ -1,10 +1,12 @@
 import React from 'react';
+import { StyledContainer } from './styles';
+import Footer from 'components/Footer';
 
 const Home = () => {
   return (
-    <>
-      <div>홈 화면</div>
-    </>
+    <StyledContainer>
+      <Footer />
+    </StyledContainer>
   );
 };
 
