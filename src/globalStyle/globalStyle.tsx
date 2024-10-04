@@ -29,7 +29,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background-color: #fff5d1; 
+    background-color: #fff5d1;
     display: flex;
     justify-content: center;
     align-items: center;
