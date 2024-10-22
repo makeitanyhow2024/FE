@@ -1,4 +1,3 @@
-import close from './images/close.svg';
 import leftArrow from './images/leftArrow.svg';
 import rightArrow from './images/leftArrow.svg';
 import downArrow from './images/downArrow.svg';
@@ -24,15 +23,16 @@ import bellOff from './images/bellOff.svg';
 import previewOn from './images/previewOn.svg';
 import previewOff from './images/previewOff.svg';
 import retry from './images/retry.svg';
-
-// 사용법: src부분에 {images.close} 삽입
+import yellowFace from './images/yellowFace.svg';
+import share from './images/share.svg';
+import message2 from './images/message2.svg';
+import smilePink from './images/smilePink.svg';
 
 type IndexedAssetObject = {
   [key: string]: IndexedAssetObject | any;
 };
 
 export const images: IndexedAssetObject = {
-  close,
   leftArrow,
   rightArrow,
   downArrow,
@@ -58,4 +58,8 @@ export const images: IndexedAssetObject = {
   previewOn,
   previewOff,
   retry,
+  yellowFace,
+  share,
+  message2,
+  smilePink,
 };

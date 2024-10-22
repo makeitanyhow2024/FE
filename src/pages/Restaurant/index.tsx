@@ -1,10 +1,12 @@
+import Footer from 'components/Footer';
 import React from 'react';
+import { StyledContainer } from './styles';
 
 const Restaurant = () => {
   return (
-    <>
-      <div>맛집 화면</div>
-    </>
+    <StyledContainer>
+      <Footer />
+    </StyledContainer>
   );
 };
 
