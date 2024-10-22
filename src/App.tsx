@@ -1,5 +1,7 @@
 import Home from 'pages/Home';
 import Party from 'pages/Party';
+import DetailPage from 'pages/Party/DetailPage';
+import Restaurant from 'pages/Restaurant';
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 
@@ -11,6 +13,10 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/party" element={<Party />} />
+      <Route path="/party-detail" element={<DetailPage />} />
+
+      <Route path="/restaurant" element={<Restaurant />} />
+      {/* <Route path="/my" element={<My />} /> */}
     </Routes>
   );
 }
