@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { StyledPartyDetailContainer } from './styles';
 import Footer from 'components/Footer';
 import { images } from 'assets/images';
 import { GetPartyDetailData } from '../models/party';
-import ConfirmAlert from '../components/ConfirmAlert';
 import { useRecoilState } from 'recoil';
 import { isPartyDetailClickedState } from '../stores';
 
@@ -79,11 +78,11 @@ const DetailPage = () => {
         <div onClick={() => onClickParty()}>참석하기</div>
       </div>
 
-      {isClicked && (
+      {/* {isClicked && (
         <div className="party-modal">
           <ConfirmAlert />
         </div>
-      )}
+      )} */}
 
       <Footer />
     </StyledPartyDetailContainer>
