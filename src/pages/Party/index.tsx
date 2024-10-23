@@ -3,7 +3,8 @@ import { StyledPartyContainer } from './styles';
 import { images } from 'assets/images';
 import { GetPartyListData } from './models/party';
 import Footer from 'components/Footer';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
+import PartyHeader from './components/PartyHeader';
 
 const Party = () => {
   // 화면 사이즈 : 371 * 808 // 56 +712 = 768 // 375 * 768+44 772
@@ -112,11 +113,11 @@ const Party = () => {
 
   return (
     <StyledPartyContainer className="party-container">
-      <div className="party-title">
-        <img className="back" src={images.leftArrow} alt="back" />
-        <h1>어떻게든 모이겠지</h1>
-        <img className="title-icon" src={images.yellowFace} alt="icon" />
-      </div>
+      <PartyHeader
+        headerText={'어떻게든 모이겠지'}
+        img={images.yellowFace}
+        url={'/party/create'}
+      />
 
       <div className="search">
         <input type="text" placeholder="Search..." />
@@ -128,7 +129,7 @@ const Party = () => {
           <div
             key={i}
             className="party-container"
-            onClick={() => navigate('/party-detail')}
+            onClick={() => navigate('/party/detail')}
           >
             {/* <div key={party.id}> */}
 

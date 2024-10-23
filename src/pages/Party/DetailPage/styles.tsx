@@ -20,7 +20,7 @@ export const StyledPartyDetailContainer = styled.div`
   }
 
   // 페이지 타이틀
-  & .party-detail-title {
+  & .party-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -94,6 +94,10 @@ export const StyledPartyDetailContainer = styled.div`
       }
       & > div {
         font-size: 10px;
+
+        &:hover {
+          cursor: pointer;
+        }
       }
     }
 

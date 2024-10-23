@@ -7,6 +7,7 @@ import './index.css';
 import App from './App';
 import theme from 'globalStyle/theme';
 import GlobalStyle from 'globalStyle/globalStyle';
+import { RecoilRoot } from 'recoil';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement,
@@ -16,7 +17,9 @@ root.render(
   <ThemeProvider theme={theme}>
     <GlobalStyle />
     <BrowserRouter>
-      <App />
+      <RecoilRoot>
+        <App />
+      </RecoilRoot>
     </BrowserRouter>
   </ThemeProvider>,
   // </React.StrictMode>,
