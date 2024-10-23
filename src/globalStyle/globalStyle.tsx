@@ -20,7 +20,7 @@ const GlobalStyle = createGlobalStyle`
     align-items: center;
     justify-content: flex-start;
     width: 375px; 
-    height: 812px; 
+    height: 768px; 
     margin: 0 auto;
     background-color: #fff; 
     border: 1px solid #ddd;

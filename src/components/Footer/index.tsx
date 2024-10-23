@@ -19,7 +19,8 @@ const Footer = () => {
       <StyledButton
         className={
           location.pathname === '/party' ||
-          location.pathname === '/party-detail'
+          location.pathname === '/party/detail' ||
+          location.pathname === '/party/create'
             ? 'clicked'
             : ''
         }

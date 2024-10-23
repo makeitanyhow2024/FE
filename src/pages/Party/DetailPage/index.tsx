@@ -1,15 +1,18 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { StyledPartyDetailContainer } from './styles';
 import Footer from 'components/Footer';
 import { images } from 'assets/images';
 import { GetPartyDetailData } from '../models/party';
-import ConfirmAlert from '../components/ConfirmAlert';
 import { useRecoilState } from 'recoil';
 import { isPartyDetailClickedState } from '../stores';
+import ConfirmAlert from '../components/ConfirmAlert';
+import { useNavigate } from 'react-router-dom';
+import PartyHeader from '../components/PartyHeader';
 
 const DetailPage = () => {
-  const [isClicked, setIsClicked] = useRecoilState(isPartyDetailClickedState);
+  const navigate = useNavigate();
 
+  const [isClicked, setIsClicked] = useRecoilState(isPartyDetailClickedState);
   const data: GetPartyDetailData[] = [
     {
       id: 1,
@@ -38,11 +41,7 @@ const DetailPage = () => {
 
   return (
     <StyledPartyDetailContainer className="party-detail-container">
-      <div className="party-detail-title">
-        <img className="back" src={images.leftArrow} alt="back" />
-        <h1>{data[0].name}</h1>
-        <img className="title-icon" src={images.share} alt="icon" />
-      </div>
+      <PartyHeader headerText={data[0].name} img={images.share} />
 
       <div className="party-detail-img">{}</div>
 
@@ -58,7 +57,9 @@ const DetailPage = () => {
       <div className="detail-info">
         <div className="detail-title">
           <h2>모임상세정보</h2>
-          <div>맛집 정보 보기 {'>'}</div>
+          <div onClick={() => navigate('/restaurant')}>
+            맛집 정보 보기 {'>'}
+          </div>
         </div>
 
         <div className="detail-content">

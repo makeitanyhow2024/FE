@@ -7,6 +7,7 @@ interface ButtonProps {
   height?: string;
   backgroundColor?: '#FFC700' | '#FFF5D1' | '#333' | '#D40101';
   color?: '#000' | '#FFF9E5';
+  onClick?: any;
 }
 
 const StyledButton = styled.button<
@@ -45,6 +46,7 @@ const Button: React.FC<ButtonProps> = ({
   height,
   backgroundColor,
   color,
+  onClick,
 }) => {
   return (
     <StyledButton
@@ -52,6 +54,7 @@ const Button: React.FC<ButtonProps> = ({
       height={height}
       backgroundColor={backgroundColor}
       color={color}
+      onClick={onClick}
     >
       {text}
     </StyledButton>
