@@ -3,6 +3,7 @@ import Party from 'pages/Party';
 import CreateParty from 'pages/Party/CreateParty';
 import DetailPage from 'pages/Party/DetailPage';
 import Restaurant from 'pages/Restaurant';
+import DetailRestaurant from 'pages/Restaurant/DetailReataurant';
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 
@@ -19,6 +20,7 @@ function App() {
       <Route path="/party/create" element={<CreateParty />} />
 
       <Route path="/restaurant" element={<Restaurant />} />
+      <Route path="/restaurant/detail" element={<DetailRestaurant />} />
       {/* <Route path="/my" element={<My />} /> */}
     </Routes>
   );
