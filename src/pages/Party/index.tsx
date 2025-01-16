@@ -21,16 +21,14 @@ const Party = () => {
       description:
         '맛집 불모지인 이곳에 새로운 쌀국수 집이 오픈했다는 희소식! 뿌시러 가실 분 구함',
       date: '2024.10.10',
-      maxpeople: 6,
-      duedate: new Date('2024.10.10'),
-      status: '',
-      bab_category: '베트남 음식',
+      maxPeople: 6,
+      dueDate: '2024.10.10',
+      partyStatus: '',
+      babCategory: '베트남 음식',
 
       party_leader: 1001,
-      participants: [
-        { user_id: 1003, user_name: '휴런이' },
-        { user_id: 1008, user_name: '휴휴휴' },
-      ],
+      babName: '',
+      participants: 2,
     },
     {
       id: 2,
@@ -38,17 +36,14 @@ const Party = () => {
       description:
         '맛집 불모지인 이곳에 새로운 쌀국수 집이 오픈했다는 희소식! 뿌시러 가실 분 구함',
       date: '2024.10.10',
-      maxpeople: 6,
-      duedate: new Date('2024.10.10'),
-      status: '',
-      bab_category: '베트남 음식',
+      maxPeople: 6,
+      dueDate: '2024.10.10',
+      partyStatus: '',
+      babCategory: '베트남 음식',
 
       party_leader: 1001,
-      participants: [
-        { user_id: 1003, user_name: '무지' },
-        { user_id: 1008, user_name: '네오' },
-        { user_id: 1008, user_name: '고양이' },
-      ],
+      babName: '',
+      participants: 3,
     },
     {
       id: 3,
@@ -56,13 +51,14 @@ const Party = () => {
       description:
         '맛집 불모지인 이곳에 새로운 쌀국수 집이 오픈했다는 희소식! 뿌시러 가실 분 구함',
       date: '2024.10.10',
-      maxpeople: 6,
-      duedate: new Date('2024.10.10'),
-      status: '',
-      bab_category: '베트남 음식',
+      maxPeople: 6,
+      dueDate: '2024.10.10',
+      partyStatus: '',
+      babCategory: '베트남 음식',
 
       party_leader: 1001,
-      participants: [{ user_id: 1003, user_name: '먹보' }],
+      babName: '',
+      participants: 1,
     },
     {
       id: 4,
@@ -70,16 +66,14 @@ const Party = () => {
       description:
         '맛집 불모지인 이곳에 새로운 쌀국수 집이 오픈했다는 희소식! 뿌시러 가실 분 구함',
       date: '2024.10.10',
-      maxpeople: 6,
-      duedate: new Date('2024.10.10'),
-      status: '',
-      bab_category: '베트남 음식',
+      maxPeople: 6,
+      dueDate: '2024.10.10',
+      partyStatus: '',
+      babCategory: '베트남 음식',
 
       party_leader: 1001,
-      participants: [
-        { user_id: 1003, user_name: '강아지' },
-        { user_id: 1003, user_name: '어피치' },
-      ],
+      babName: '',
+      participants: 4,
     },
     {
       id: 5,
@@ -87,13 +81,14 @@ const Party = () => {
       description:
         '맛집 불모지인 이곳에 새로운 쌀국수 집이 오픈했다는 희소식! 뿌시러 가실 분 구함',
       date: '2024.10.10',
-      maxpeople: 6,
-      duedate: new Date('2024.10.10'),
-      status: '',
-      bab_category: '베트남 음식',
+      maxPeople: 6,
+      dueDate: '2024.10.10',
+      partyStatus: '',
+      babCategory: '베트남 음식',
 
       party_leader: 1001,
-      participants: [{ user_id: 1003, user_name: '피카쥬' }],
+      babName: '',
+      participants: 0,
     },
     {
       id: 6,
@@ -101,13 +96,14 @@ const Party = () => {
       description:
         '맛집 불모지인 이곳에 새로운 쌀국수 집이 오픈했다는 희소식! 뿌시러 가실 분 구함',
       date: '2024.10.10',
-      maxpeople: 6,
-      duedate: new Date('2024.10.10'),
-      status: '',
-      bab_category: '베트남 음식',
+      maxPeople: 6,
+      dueDate: '2024.10.10',
+      partyStatus: '',
+      babCategory: '베트남 음식',
 
       party_leader: 1001,
-      participants: [],
+      babName: '',
+      participants: 2,
     },
   ];
 
@@ -146,7 +142,7 @@ const Party = () => {
                 <div>
                   {party.date} | {party.party_leader}
                 </div>
-                <div>참여 {party.participants.length}</div>
+                <div>참여 {party.participants}</div>
               </div>
             </div>
           </div>

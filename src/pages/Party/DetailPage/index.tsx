@@ -20,18 +20,14 @@ const DetailPage = () => {
       description:
         '맛집 불모지인 이곳에 새로운 쌀국수 집이 오픈했다는 희소식! 뿌시러 가실 분 구함',
       date: '2024.10.10',
-      maxpeople: 6,
-      duedate: new Date('2024.10.10'),
-      status: '',
-      bab_category: '베트남 음식',
-
+      maxPeople: 6,
+      dueDate: '2024.10.10',
+      partyStatus: '',
+      babCategory: '베트남 음식',
       icon_id: 1,
-
+      babName: '포메인',
       party_leader: 1001,
-      participants: [
-        { user_id: 1003, user_name: '휴런이' },
-        { user_id: 1008, user_name: '휴휴휴' },
-      ],
+      participants: 2,
     },
   ];
 
@@ -48,10 +44,10 @@ const DetailPage = () => {
       <div className="category">
         <div>
           <span>카테고리</span>
-          <span className="hashtag">#{data[0].bab_category}</span>
+          <span className="hashtag">#{data[0].babCategory}</span>
         </div>
 
-        <span>참여 {data[0].participants.length}</span>
+        <span>참여 {data[0].participants}</span>
       </div>
 
       <div className="detail-info">
@@ -65,8 +61,8 @@ const DetailPage = () => {
         <div className="detail-content">
           <div>장소: {}</div>
           <div>일시: {data[0].date}</div>
-          <div>모집 마감일: {String(data[0].duedate)}</div>
-          <div>모집 최대 인원: {data[0].maxpeople}명</div>
+          <div>모집 마감일: data[0].dueDate</div>
+          <div>모집 최대 인원: {data[0].maxPeople}명</div>
         </div>
       </div>
 
