@@ -2,9 +2,9 @@ import styled from 'styled-components';
 
 export const StyledPartyDetailContainer = styled.div`
   width: 100%;
-  height: calc(100% - 44px);
+  height: 100%;
   min-width: 375px;
-  min-height: 768px;
+  /* min-height: 768px; */
   background-color: #fff5d1;
   border: 1px solid #ccc;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
