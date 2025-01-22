@@ -55,12 +55,14 @@ export const StyledCreateContent = styled.div`
 
   // 카테고리 드롭다운
   & .drop-down {
+    width: 328px;
     height: 56px;
     border: 2px solid #000;
     border-radius: 4px;
     background: #fff9e5;
+    position: relative;
 
-    & > div {
+    & > .category {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -82,6 +84,35 @@ export const StyledCreateContent = styled.div`
 
       &:hover {
         cursor: pointer;
+      }
+    }
+
+    & .drop-down-open {
+      position: absolute;
+      right: -2px;
+      margin-top: 8px;
+
+      width: 329px;
+      background-color: #fff9e5;
+      border: 1px solid #000;
+      border-radius: 4px;
+
+      /* z-index: 1; */
+
+      & > li {
+        display: flex;
+        align-items: center; /* 텍스트 수직 정렬 */
+        justify-content: flex-start; /* 텍스트 왼쪽 정렬 */
+
+        width: 100%;
+        height: 56px;
+        padding: 0 24px;
+        font-size: 16px;
+        border-bottom: 1px solid #000;
+
+        &:hover {
+          cursor: pointer;
+        }
       }
     }
   }

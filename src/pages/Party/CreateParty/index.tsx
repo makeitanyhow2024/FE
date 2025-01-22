@@ -29,15 +29,15 @@ const CreateParty = () => {
 
       <StyledCreateContent>
         <div className="drop-down">
-          <div onClick={onClickDropdown}>
-            <div className={selectedOption ? 'blackColor' : ''}>
+          <div className="category" onClick={onClickDropdown}>
+            <div className={`${selectedOption ? 'blackColor' : ''}`}>
               {selectedOption || '카테고리를 선택하세요'}
             </div>
 
             <img src={images.downArrow} alt="downArrow" />
           </div>
           {isOpen && (
-            <ul>
+            <ul className="drop-down-open">
               {category.map((option) => (
                 <li key={option} onClick={() => onClickOption(option)}>
                   {option}
