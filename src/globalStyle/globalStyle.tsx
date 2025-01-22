@@ -37,6 +37,12 @@ const GlobalStyle = createGlobalStyle`
     height: 100vh;
     margin: 0;
   }
+
+  input[type="date"]{
+    appearance:none ;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
 `;
 
 export default GlobalStyle;

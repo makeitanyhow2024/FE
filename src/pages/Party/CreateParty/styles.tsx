@@ -141,6 +141,12 @@ export const StyledCreateContent = styled.div`
         font-size: 16px;
       }
     }
+
+    & .char-count-title {
+      text-align: right;
+      font-size: 14px;
+      color: #999;
+    }
   }
 
   & .description > div {
@@ -159,6 +165,75 @@ export const StyledCreateContent = styled.div`
 
       padding: 16px 24px;
       font-size: 16px;
+    }
+
+    & .char-count-description {
+      text-align: right;
+      font-size: 14px;
+      color: #999;
+    }
+  }
+
+  & .date {
+    & .date-container {
+      width: 328px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+
+      & input {
+        width: 100%;
+        /* width: 328px; */
+        font-size: 16px;
+      }
+    }
+  }
+
+  & .max {
+    & .date-container {
+      width: 328px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+
+      & input,
+      & select {
+        width: 100%;
+        height: 100%;
+        font-size: 16px;
+        padding: 0 10px;
+        border: 2px solid #000;
+        border-radius: 4px;
+        background: #fff9e5;
+        &.placeholder,
+        &.placeholder .placeholder {
+          color: #999;
+        }
+      }
+    }
+  }
+
+  & .restaurant-detail {
+    & > span {
+      height: 16px;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    & > div {
+      width: 100%;
+      height: 56px;
+      background-color: #fff9e5;
+      border: 2px solid #000;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      font-size: 16px;
+      font-weight: 700;
     }
   }
 `;
