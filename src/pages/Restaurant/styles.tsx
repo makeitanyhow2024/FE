@@ -159,4 +159,14 @@ export const StyledRestaurantContainer = styled.div`
       }
     }
   }
+
+  // 파티 생성
+  & .restaurant-create {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 300px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
 `;

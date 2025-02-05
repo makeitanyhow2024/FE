@@ -35,8 +35,8 @@ const Restaurant = () => {
   return (
     <StyledRestaurantContainer className="restaurant-container">
       <RestaurantHeader
-        headerText={'어떻게든 모이겠지'}
-        img={images.smilePink}
+        headerText={'뭘 먹어야 소문이나?'}
+        img={images.yellowFace}
         url={'/restaurant/detail'}
       />
 
@@ -68,6 +68,11 @@ const Restaurant = () => {
             </div>
           </div>
         ))}
+      </div>
+      <div className="restaurant-create">
+        <div onClick={() => navigate('/restaurant/create')}>
+          <img src={images.loading} alt="search" />
+        </div>
       </div>
 
       <Footer />

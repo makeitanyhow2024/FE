@@ -11,7 +11,7 @@ const RestaurantHeader = ({ headerText, img, url }: typeProps) => {
   const navigate = useNavigate();
 
   return (
-    <div className="party-title">
+    <div className="restaurant-title">
       <img
         className="back"
         src={images.leftArrow}
