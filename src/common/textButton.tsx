@@ -48,6 +48,7 @@ interface TextButtonProps {
   onClick: () => void;
   children: React.ReactNode;
   className?: string;
+  color?: string;
 }
 
 const StyledTextButton2 = styled.span`
@@ -78,9 +79,14 @@ const TextButton2: React.FC<TextButtonProps> = ({
   onClick,
   className,
   children,
+  color,
 }) => {
   return (
-    <StyledTextButton2 className={className} onClick={onClick}>
+    <StyledTextButton2
+      className={className}
+      onClick={onClick}
+      style={{ color: color }}
+    >
       {children}
     </StyledTextButton2>
   );

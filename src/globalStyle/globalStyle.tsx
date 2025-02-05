@@ -20,7 +20,8 @@ const GlobalStyle = createGlobalStyle`
     align-items: center;
     justify-content: flex-start;
     width: 375px; 
-    height: 768px; 
+    /* height: 768px;  */
+    height: 100%; 
     margin: 0 auto;
     background-color: #fff; 
     border: 1px solid #ddd;
@@ -35,6 +36,12 @@ const GlobalStyle = createGlobalStyle`
     align-items: center;
     height: 100vh;
     margin: 0;
+  }
+
+  input[type="date"]{
+    appearance:none ;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
 `;
 
