@@ -5,6 +5,8 @@ import styled from 'styled-components';
 interface TextButtonProps {
   onClick: () => void;
   children: React.ReactNode;
+  className?: string;
+  color?: string;
 }
 
 const StyledTextButton = styled.span`
@@ -12,7 +14,8 @@ const StyledTextButton = styled.span`
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 1%;
-  color: #555;
+  color: ${(props) => props.color || '#555'};
+
   cursor: pointer;
   transition: opacity 0.2s ease;
 
@@ -25,8 +28,17 @@ const StyledTextButton = styled.span`
   }
 `;
 
-const TextButton: React.FC<TextButtonProps> = ({ onClick, children }) => {
-  return <StyledTextButton onClick={onClick}>{children}</StyledTextButton>;
+const TextButton: React.FC<TextButtonProps> = ({
+  onClick,
+  className,
+  children,
+  color,
+}) => {
+  return (
+    <StyledTextButton className={className} onClick={onClick} color={color}>
+      {children}
+    </StyledTextButton>
+  );
 };
 
 export { TextButton };
@@ -35,6 +47,8 @@ export { TextButton };
 interface TextButtonProps {
   onClick: () => void;
   children: React.ReactNode;
+  className?: string;
+  color?: string;
 }
 
 const StyledTextButton2 = styled.span`
@@ -61,8 +75,21 @@ const StyledTextButton2 = styled.span`
   }
 `;
 
-const TextButton2: React.FC<TextButtonProps> = ({ onClick, children }) => {
-  return <StyledTextButton2 onClick={onClick}>{children}</StyledTextButton2>;
+const TextButton2: React.FC<TextButtonProps> = ({
+  onClick,
+  className,
+  children,
+  color,
+}) => {
+  return (
+    <StyledTextButton2
+      className={className}
+      onClick={onClick}
+      style={{ color: color }}
+    >
+      {children}
+    </StyledTextButton2>
+  );
 };
 
 export { TextButton2 };

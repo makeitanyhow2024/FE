@@ -2,8 +2,11 @@ import styled from 'styled-components';
 
 export const StyledContainer = styled.div`
   position: relative;
-  width: 375px;
-  height: 812px;
+  width: 100%;
+  height: 100%;
+  min-width: 375px;
+  /* min-height: 768px; */
+
   background-color: #fff5d1;
   display: flex;
   flex-direction: column;

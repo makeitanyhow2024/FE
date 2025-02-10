@@ -1,5 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset';
+import DoHyeonRegular from 'assets/fonts/DoHyeon-Regular.ttf';
+import PretendardVariable from 'assets/fonts/PretendardVariable.ttf';
 
 const GlobalStyle = createGlobalStyle`
   /* Reset CSS */
@@ -20,7 +22,8 @@ const GlobalStyle = createGlobalStyle`
     align-items: center;
     justify-content: flex-start;
     width: 375px; 
-    height: 812px; 
+    /* height: 768px;  */
+    height: 100%; 
     margin: 0 auto;
     background-color: #fff; 
     border: 1px solid #ddd;
@@ -35,6 +38,24 @@ const GlobalStyle = createGlobalStyle`
     align-items: center;
     height: 100vh;
     margin: 0;
+  }
+
+  input[type="date"]{
+    appearance:none ;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+
+  @font-face {
+    font-family: 'Do Hyeon';
+    src: url(${DoHyeonRegular}) format("truetype");
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Pretendard Variable';
+    src: url(${PretendardVariable}) format("truetype");
+    font-style: normal;
   }
 `;
 
