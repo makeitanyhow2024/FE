@@ -27,6 +27,7 @@ import yellowFace from './images/yellowFace.svg';
 import share from './images/share.svg';
 import message2 from './images/message2.svg';
 import smilePink from './images/smilePink.svg';
+import yellowSmileFace from './images/yellowSmileFace.svg';
 
 type IndexedAssetObject = {
   [key: string]: IndexedAssetObject | any;
@@ -62,4 +63,5 @@ export const images: IndexedAssetObject = {
   share,
   message2,
   smilePink,
+  yellowSmileFace,
 };

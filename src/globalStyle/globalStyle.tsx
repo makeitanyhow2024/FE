@@ -1,5 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset';
+import DoHyeonRegular from 'assets/fonts/DoHyeon-Regular.ttf';
+import PretendardVariable from 'assets/fonts/PretendardVariable.ttf';
 
 const GlobalStyle = createGlobalStyle`
   /* Reset CSS */
@@ -42,6 +44,18 @@ const GlobalStyle = createGlobalStyle`
     appearance:none ;
     -webkit-appearance: none;
     -moz-appearance: none;
+  }
+
+  @font-face {
+    font-family: 'Do Hyeon';
+    src: url(${DoHyeonRegular}) format("truetype");
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Pretendard Variable';
+    src: url(${PretendardVariable}) format("truetype");
+    font-style: normal;
   }
 `;
 

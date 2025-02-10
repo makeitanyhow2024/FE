@@ -1,10 +1,11 @@
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
 import Home from 'pages/Home';
 import Party from 'pages/Party';
 import CreateParty from 'pages/Party/CreateParty';
 import DetailPage from 'pages/Party/DetailPage';
 import Restaurant from 'pages/Restaurant';
-import React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import MyPage from 'pages/MyPage';
 
 // import Home from '@pages/Home/index';
 // import Party from '@pages/Party';
@@ -19,7 +20,8 @@ function App() {
       <Route path="/party/create" element={<CreateParty />} />
 
       <Route path="/restaurant" element={<Restaurant />} />
-      {/* <Route path="/my" element={<My />} /> */}
+
+      <Route path="/my-page" element={<MyPage />} />
     </Routes>
   );
 }

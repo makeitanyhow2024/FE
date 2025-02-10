@@ -35,8 +35,8 @@ const Footer = () => {
         맛집
       </StyledButton>
       <StyledButton
-        className={location.pathname === '/my' ? 'clicked' : ''}
-        onClick={() => navigate('/my')}
+        className={location.pathname === '/my-page' ? 'clicked' : ''}
+        onClick={() => navigate('/my-page')}
       >
         MY
       </StyledButton>
